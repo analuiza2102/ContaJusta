@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+   background-color: #2F4858;
+   color: #FFE5DD;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .regras_{
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 2rem;
+
+  }
+
+  .regras_ ul{
+    list-style: circle;
+  }
+
+  .regras_ li{
+    text-align: justify;
+    line-height: 1.5;
+  }
+  
+  #inputs {
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #inputs label, #inputs input {
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  #inputs label {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  #inputs input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .produto {
+    margin-bottom: 10px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    border: 1px solid #000000;
+   
+    box-sizing: border-box;
+
+  }
+  
+  #resultado h2 {
+    margin-bottom: 10px;
+  }
+
+
+  button{
+    background-color: #96AAE0;
+    color: #000000;
+    font-family:'Josefin Sans', sans-serif ;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+    button:hover{
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    .rodape{
+        margin-top: 20px;
+        
+        font-size: 1rem;
+        text-align: center;
+        background-color: #5AB7D4;
+        width: 100%;
+        padding: 10px;
+    }

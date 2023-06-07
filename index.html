@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>ContaJusta</title>
+
+
+
+</head>
+<body>
+
+        <h1>Conta Justa</h1>
+    <section class="regras_">
+        <h2>Regras:</h2>
+        <ul>
+          <li>Insira o valor total da conta e o número de clientes.</li>
+          <li>Adicione os produtos consumidos por cada cliente, informando o nome do produto e seu preço.</li>
+          <li>Ao calcular, a calculadora dividirá o valor total, incluindo 10% de serviço, de forma igualitária entre os clientes.</li>
+          <li>Será exibido o valor individual que cada cliente deve pagar, o valor consumido por cada cliente e o valor do serviço por cliente.</li>
+          <li>Utilize o botão "Adicionar Cliente" para incluir mais clientes e o botão "Adicionar Produto" para incluir mais produtos.</li>
+          <li>Para excluir um cliente ou produto, clique no botão "Excluir" correspondente.</li>
+          <li>Utilize o botão "Calcular" para realizar a divisão da conta.</li>
+          <li>Utilize o botão "Limpar" para reiniciar a calculadora e limpar todos os campos.</li>
+        </ul>
+    </section>
+
+    <div id="inputs">
+      <label for="total">Valor Total:</label>
+      <input type="number" id="total" placeholder="Digite o valor total"><br>
+  
+      <label for="numClientes">Número de Clientes:</label>
+      <input type="number" id="numClientes" placeholder="Digite o número de clientes"><br>
+  
+      <div id="clientes">
+        <h2>Clientes</h2>
+        <div class="cliente">
+          <input type="text" class="nomeCliente" placeholder="Nome do Cliente">
+          <button onclick="excluirCliente(this)">Excluir</button>
+        </div>
+      </div>
+  
+      <div id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto">
+          <input type="text" class="nomeProduto" placeholder="Nome do Produto">
+          <input type="number" class="precoProduto" placeholder="Preço do Produto">
+          <button onclick="excluirProduto(this)">Excluir</button>
+        </div>
+      </div>
+  
+      <button onclick="adicionarCliente()">Adicionar Cliente</button>
+      <button onclick="adicionarProduto()">Adicionar Produto</button>
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="limpar()">Limpar</button>
+    </div>
+  
+    <div id="resultado">
+      <h2>Resultado</h2>
+      <div id="divisaoConta"></div>
+    </div>
+  
+
+    <footer class="rodape">
+        <p><a href="https://github.com/analuiza2102">Desenvolvido por Ana Luiza </a>
+    </footer>
+    
+</body>
+    <script src="./js/script.js"></script>
+</html>
