@@ -6,8 +6,9 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-   background-color: #2F4858;
-   color: #FFE5DD;
+    background-color: #2F4858;
+    color: #FFE5DD;
+    width: auto;
   }
   
   h1 {
@@ -17,7 +18,7 @@ body {
 
   .regras_{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,10 +69,15 @@ body {
   
   #resultado {
     margin-top: 20px;
-    border: 1px solid #000000;
-   
+    border: none;
+    padding: 15px;
     box-sizing: border-box;
+    width: auto;
 
+  }
+
+  #divisaoConta {
+    font-size: 2rem;
   }
   
   #resultado h2 {
@@ -101,7 +107,6 @@ body {
 
     .rodape{
         margin-top: 20px;
-        
         font-size: 1rem;
         text-align: center;
         background-color: #5AB7D4;
